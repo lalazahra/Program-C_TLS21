@@ -1,0 +1,44 @@
+#include <iostream>
+using namespace std;
+
+int main ()
+{
+    
+    string kesediaan, gejala, vaksin;
+    int ya, tidak, sudah;
+    
+    cout << "Selamat Datang di Rumah Sakit Anugerah\n";
+    cout << "Demi keamanan pasien dan pengunjung, apakah anda bersedia menjawab pertanyaan di bawah ini?\n";
+    cout << "Jawab dengan ya atau tidak :";
+    cin >> kesediaan;
+    
+    if (kesediaan == "ya")
+    {
+    cout << "\nApakah dalam minggu ini anda merasakan gejala batuk, pilek, atau demam?\n";
+    cout << "Jawab dengan ya atau tidak : ";
+    cin >> gejala;
+    
+        if (gejala == "tidak")
+        {
+        cout << "\nApakah anda telah mendapatkan vaksin minimal dosis pertama?\n";
+        cout << "Jawab dengan sudah atau belum : ";
+        cin >> vaksin;
+        
+            if (vaksin == "sudah")
+            {
+            cout <<"\nPemeriksaan selesai, anda dipersilahkan masuk\n";
+            cout <<"Seluruh penghujung diharap tetap menerapkan protokol kesehatan\n";
+            
+            }else{
+            cout << "\nMohon maaf anda dapat berkunjung pada lain kesempatan\n";
+            }
+        
+        }else{
+        cout << "\nMohon maaf anda dapat berkunjung pada lain kesempatan\n";
+        }
+        
+    }else{
+    cout<<"\nMohon maaf anda dapat berkunjung pada lain kesempatan";
+    }
+return 0;
+}
